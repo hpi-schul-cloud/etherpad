@@ -178,15 +178,9 @@
    * https://www.npmjs.com/package/ueberdb2
    */
 
-  "dbType": "${DB_TYPE:dirty}",
-  "dbSettings": {
-    "host":     "${DB_HOST}",
-    "port":     "${DB_PORT}",
-    "database": "${DB_NAME}",
-    "user":     "${DB_USER}",
-    "password": "${DB_PASS}",
-    "charset":  "${DB_CHARSET}",
-    "filename": "${DB_FILENAME:var/dirty.db}"
+  "dbType": "${DB_TYPE:mongodb}",
+  "dbSettings" : {
+    "url": "${ETHERPAD_MONGOURL}"
   },
 
   /*
